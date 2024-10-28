@@ -1,0 +1,11 @@
+#!/bin/bash
+HOSTNAME=$(hostname)
+echo "My hostname is : $HOSTNAME"
+echo "My current bash version is : $BASH_VERSION"
+echo "Process ID of bash i am using : $$"
+echo "exit status of the last command : $?"
+echo "all the arguments passed to the script : $@"
+echo "Number of arguments passed : $#"
+echo "$DIRSTACK"
+echo "$IFS"
+echo "$PATH"
