@@ -4,5 +4,6 @@ echo "Shell scripting is so much fun"
 #Variable declaration
 
 read -p "Enter two numbers to calculate their sum : " var1 var2
+#you can add as many as possible numbers at a time
 let sum=$var1+$var2
 echo "Answer : $sum"
