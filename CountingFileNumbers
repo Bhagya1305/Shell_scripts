@@ -1,0 +1,12 @@
+#!/bin/bash
+function Number_count(){
+local directory=$1
+echo "$directory"
+Number_of_Files=$(ls $directory | wc -l)
+echo "$Number_of_Files"
+
+}
+
+Number_count /etc
+Number_count /var
+Number_count /usr/bin
