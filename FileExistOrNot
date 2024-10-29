@@ -1,0 +1,14 @@
+#here is the script to check where file exist or not
+#!/bin/bash
+FILEPATH="/home/ubuntu/projects/tasks/task01.sh"
+if [ -e "$FILEPATH" ]
+then
+        echo "$FILEPATH Exists"
+fi
+#here we are checking whether file having executable permission or not
+if [ -x "$FILEPATH" ]
+then
+        echo "You have executable permissions"
+else
+        echo "You do not have exexute permissions to the file"
+fi
