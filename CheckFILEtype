@@ -11,3 +11,18 @@ else
         echo "$FILE is another type of file"
 fi
 ls -l $FILE
+
+Another way to write it with arg
+#!/bin/bash
+#FILE=$1
+read -p "Enter file or directory name : " $1
+if [ -f "$1" ]
+then
+        echo "$1 is a regular file"
+elif [ -d "$1"]
+then
+        echo "$1 is a directory"
+else
+        echo "$1 is another type of file"
+fi
+ls -l $1
